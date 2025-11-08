@@ -1,0 +1,130 @@
+
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+%\usepackage{amsmath}%for substack, multiline underbrace
+\usepackage{sectsty}
+\usepackage[nodisplayskipstretch]{setspace}
+\usepackage{parskip}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+
+% Set your name here
+\def\name{Wei-Lin Chen}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}%http://econ.ucsd.edu/\string~dkaplan/pdfs/dkaplan\string_cv.pdf}
+
+% Customize page headers
+%NEW LINES:
+
+
+\fancyhead{} \fancyfoot{} %clear defaults
+\fancyhead[RO,RE]{Teaching Statement \\
+March 2023}
+\fancyhead[LO,LE]{Wei-Lin Chen \\ University of California San Diego}
+%\fancyhead[LE,RO]{\slshape \rightmark}
+%\fancyhead[LO,RE]{\slshape \leftmark}
+%\markright{\Large\sc Diversity Statement  \hfill\name }
+%\fancyhead[RO]{\slshape \rightmark} %only need RO b/c not twoside
+\fancyfoot[C]{\thepage}
+
+
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headwidth}{\textwidth}
+\setlength{\headheight}{18pt}
+\pagestyle{fancy}
+%ORIGINAL LINES:
+%\pagestyle{myheadings}
+%\markright{\name}
+%\thispagestyle{empty}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, econometrics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 9.1in}, %WAS: 6.5in
+  left=1.0in,       %WAS: 1.0in
+  top=1.25in
+}
+
+% Custom section fonts
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+%\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\setlength\parindent{20pt}
+\onehalfspacing
+
+\begin{document}
+
+As a teacher, my primary focus is nurturing students' curiosity and developing their skills to satisfy their curiosity. 
+In particular, I aim to foster students' intuitive understanding of economics, which will enable them to narrow down general questions and form their \textit{hypotheses} about the real world. To \textit{test} these hypotheses and \textit{communicate} their findings effectively, students need basic statistical knowledge and data visualization skills.
+My teaching philosophy is influenced by my experiences as a teaching assistant at UC San Diego with Prof. James Rauch and Prof. Fabian Eckert, teaching Middle East Economics and Cities, Inequality, Innovation (Urban Economics).
+
+As an economics teacher, I want my students to base their understanding of economics on empirical facts. In my class, I will motivate economic ideas with empirical patterns from daily news and encourage students to understand why these patterns make sense or pose puzzles from the economic perspective. For instance, when teaching competitive markets, I will show gas price patterns across stations and ask students why some gas stations can charge higher prices than others. Such connections between data and economics help students develop a solid foundation to "reverse engineer" and imagine what data is needed to showcase logic.
+
+My second goal in teaching is to help students learn how to organize and visualize data to answer economic questions. To accomplish this, I will design class assignments that guide students step-by-step through answering economic questions they are curious about. I design such tasks with Prof. James Rauch in the course ``Middle East Economics.'' 
+
+Visualizing data correctly requires training. When I first TA'd "Middle East Economics," I assumed students would know how to use scatterplots, as Prof. James Rauch often used them in lectures. However, when students were asked to present data visualizations on topics they were interested in, most chose histograms and pie charts instead of scatterplots even when scatterplots are better suited for their purpose. I shared this observation with the professor, and we decided to ask students to use scatterplots to test their hypotheses for the assignment the next time the course was provided. The assignment had two parts: the first required students to choose the X and Y-axis variables and state whether they expected a positive slope, negative slope, or flat line. The second asked students to plot the graph, describe their findings, and identify any limitations in their methodology. Prof. Fabian Eckert and I design a similar assignment in "Cities, Inequality, Innovation," but students were asked to present maps instead of scatterplots. Based on my experience, I am confident that data visualization can be taught regardless of students' statistical expertise, and these skills are valuable for many career paths.
+
+Based on my teaching and research experience, I am happy to teach the Principles of Economics, Public Policy Analysis, Public Economics, and Development Economics. Two TA excellence awards in UC San Diego show my commitment to teaching. I list encouraging feedback from students below.
+
+\textbf{Student Anonymous Evaluations from Middle East Economics}
+\begin{enumerate}
+\item He is the most respectful, kind, and patient person I have seen. He really acts like he is your close friend, not your TA. He is very approachable and flexible in the sense of office hours. He even responds on weekends and late night times. He is a hero in one word. I loved Weilin. I wish the best for him and I hope he will become a teacher one day because he will be the best teacher.
+\item This TA is awesome and I hope he could be my TA for the rest of my college career.
+\end{enumerate}
+
+
+
+
+\end{document}
